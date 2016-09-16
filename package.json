@@ -1,6 +1,6 @@
 {
   "name": "json-array-sorter",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Sort an array of objects (or a similar json file) by one or more properties in ascending or descending order. Using 'require' or the CLI.",
   "main": "sorter.js",
   "scripts": {
