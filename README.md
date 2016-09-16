@@ -134,13 +134,17 @@ let sortedArray = sorter(
 )
 ```
 
-If you installed it globally you can also use the CLI like this:
+### Using the CLI, BUT NOT REALLY
+
+If you have it installed you can go its folder and use directly passing three arguments.
 
 ```javascript
-sorter config.json data.json output.json
+ node sorter config.json data.json output.json
 ```
 
 You must pass the location of the configuration .json file, the data .json file and a name for the output file.
+
+I am considering have it being able to be installed globally and so you can use from anywhere... Not sure how to do it best, I am not a great package creator, yet. =P
 
 ## Is it good to go?
 
