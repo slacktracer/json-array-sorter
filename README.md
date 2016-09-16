@@ -92,7 +92,7 @@ The test.js show a few other configuration objects but that's most ellaborate on
 You'll need Node.js. Then you can require it:
 
 ```javascript
-sorter = require('./sorter')
+sorter = require('json-array-sorter')
 ```
 
 Give it two arrays (a configuration one and a data one) and get a sorted array back:
