@@ -1,2 +1,112 @@
 # json-array-sorter
 Sort an array of objects (or a similar json file) by one or more properties in ascending or descending order. Using 'require' or the CLI.
+
+## What is this?
+
+This is an JS array of objects sorter. Say you have the following data:
+
+```javascript
+[
+    {
+        "id": "Book 1",
+        "title": "Java How To Program",
+        "author": "Deitel & Deitel",
+        "year": 2007
+    },
+    {
+        "id": "Book 2",
+        "title": "Patterns of Enterprise Application Architecture",
+        "author": "Martin Fowler",
+        "year": 2002
+    },
+    {
+        "id": "Book 3",
+        "title": "Head First Design Patterns",
+        "author": "Elisabeth Freeman",
+        "year": 2004
+    },
+    {
+        "id": "Book 4",
+        "title": "Internet & World Wide Web: How To Program",
+        "author": "Deitel & Deitel",
+        "year": 2007
+    }
+]
+
+```
+
+And you use the following configuration object:
+
+```javascript
+[
+    {
+        "column": "year",
+        "order": "descending"
+    },
+    {
+        "column": "author",
+        "order": "descending"
+    },
+    {
+        "column": "title",
+        "order": "ascending"
+    }
+]
+```
+
+The sorter will return the following object (or generate a .json file, depending on how you are using it):
+
+```javascript
+[
+    {
+        id: 'Book 4',
+        title: 'Internet & World Wide Web: How To Program',
+        author: 'Deitel & Deitel',
+        year: 2007
+    },
+    {
+        id: 'Book 1',
+        title: 'Java How To Program',
+        author: 'Deitel & Deitel',
+        year: 2007
+    },
+    {
+        id: 'Book 3',
+        title: 'Head First Design Patterns',
+        author: 'Elisabeth Freeman',
+        year: 2004
+    },
+    {
+        id: 'Book 2',
+        title: 'Patterns of Enterprise Application Architecture',
+        author: 'Martin Fowler',
+        year: 2002
+    }
+]
+```
+
+The test.js show a few other configuration objects but that's most ellaborate one.
+
+## How to use it?
+
+You'll need Node.js. Then you can require it:
+
+```javascript
+sorter = require('./sorter')
+```
+
+If you installed it globally you can also use the CLI like this:
+
+```javascript
+sorter config.json data.json output.json
+```
+
+You must pass the location of the configuration .json file, the data .json file and a name for the output file.
+
+## Is it good to go?
+
+Well... It works. =)
+
+It's just a beta for now, and I'm not sure how useful it is in the real world. But you should try it yourself and perhaps send me a pull request eventually. This my first npm package and was created as an exercise so it is not great, yet.
+
+Do get in touch if you have any questions or a good use case for it. =P

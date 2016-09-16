@@ -1,0 +1,28 @@
+{
+  "name": "json-array-sorter",
+  "version": "0.0.1",
+  "description": "Sort an array of objects (or a similar json file) by one or more properties in ascending or descending order. Using 'require' or the CLI.",
+  "main": "sorter.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slacktracer/json-array-sorter.git"
+  },
+  "keywords": [
+    "sort",
+    "array",
+    "json",
+    "multi",
+    "ascending",
+    "descending",
+    "properties"
+  ],
+  "author": "slacktracer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slacktracer/json-array-sorter/issues"
+  },
+  "homepage": "https://github.com/slacktracer/json-array-sorter#readme"
+}

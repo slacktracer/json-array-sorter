@@ -1,0 +1,14 @@
+[
+    {
+        "column": "year",
+        "order": "ascending"
+    },
+    {
+        "column": "author",
+        "order": "descending"
+    },
+    {
+        "column": "title",
+        "order": "ascending"
+    }
+]
