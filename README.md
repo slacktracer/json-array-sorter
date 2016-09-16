@@ -95,6 +95,45 @@ You'll need Node.js. Then you can require it:
 sorter = require('./sorter')
 ```
 
+Give it two arrays (a configuration one and a data one) and get a sorted array back:
+
+```javascript
+let sortedArray = sorter(
+    [
+        {
+            "column": "title",
+            "order": "ascending"
+        }
+    ],
+    [
+        {
+            "id": "Book 1",
+            "title": "Java How To Program",
+            "author": "Deitel & Deitel",
+            "year": 2007
+        },
+        {
+            "id": "Book 2",
+            "title": "Patterns of Enterprise Application Architecture",
+            "author": "Martin Fowler",
+            "year": 2002
+        },
+        {
+            "id": "Book 3",
+            "title": "Head First Design Patterns",
+            "author": "Elisabeth Freeman",
+            "year": 2004
+        },
+        {
+            "id": "Book 4",
+            "title": "Internet & World Wide Web: How To Program",
+            "author": "Deitel & Deitel",
+            "year": 2007
+        }
+    ]
+)
+```
+
 If you installed it globally you can also use the CLI like this:
 
 ```javascript
