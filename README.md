@@ -153,3 +153,7 @@ Well... It works. =)
 It's just a beta for now, and I'm not sure how useful it is in the real world. But you should try it yourself and perhaps send me a pull request eventually. This my first npm package and was created as an exercise so it is not great, yet.
 
 Do get in touch if you have any questions or a good use case for it. =P
+
+___
+
+***Technical Assesment Instructions:** just download it and run `node test` or `npm test`. Or install it using npm and then `cd` into the `json-array-sorter` folder inside `node_modules` and run `node test`.*
